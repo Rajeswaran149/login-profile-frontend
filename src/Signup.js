@@ -65,7 +65,7 @@ function Signup() {
         } = formik;
         return (
           <div className="container">
-            <h1 className="text-center">Sign in to continue</h1>
+            <h1 className="text-center">Sign up to continue</h1>
             <form onSubmit={handleSubmit}>
               <div className="form-row">
                 <label htmlFor="name">User Name</label>
@@ -137,15 +137,15 @@ function Signup() {
                   <span className="error">{errors.confirmPassword}</span>
                 )}
               </div>
-              <Link to="/login">
-                <button
-                  type="submit"
-                  className={!(dirty && isValid) ? "disabled-btn" : ""}
-                  disabled={!(dirty && isValid)}
-                >
-                  Sign Up
-                </button>
-              </Link>
+              {/* <Link to="/login"> */}
+              <button
+                type="submit"
+                className={!(dirty && isValid) ? "disabled-btn" : ""}
+                disabled={!(dirty && isValid)}
+              >
+                Sign Up
+              </button>
+              {/* </Link> */}
             </form>
             <Link to="/login">
               <h3 className="text-center">login</h3>

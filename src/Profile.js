@@ -166,7 +166,7 @@ function Profile() {
               </Link>
             </form>
             <Link to="/login">
-              <h3 className="text-center">Signup</h3>
+              <h3 className="text-center">Login</h3>
             </Link>
           </div>
         );
